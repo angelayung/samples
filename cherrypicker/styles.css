@@ -15,6 +15,14 @@ p {
 
 /* Headings */
 
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ce1212;
+  z-index: 1;
+}
+
 .big-heading {
   font-size: 3.5rem;
   line-height: 1.5;
@@ -48,6 +56,12 @@ p {
   background-color: #fff;
 }
 
+.colored-section-black {
+  background-color: #1E1F26;
+  padding: 2rem;
+  color: #fff;
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -76,7 +90,7 @@ p {
 
 /* Title Section */
 
-#title {
+#header {
   background-color: #ce1212;
   color: #fff;
   text-align: left;
@@ -118,8 +132,9 @@ p {
 }
 
 .testimonial-text {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
+  padding: 6rem;
 }
 
 .testimonial-image {
@@ -128,15 +143,9 @@ p {
   margin: 20px;
 }
 
-
-#press {
-  background-color: #1b1717;
-  padding-bottom: 3%;
-}
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
+/* Video */
+#video {
+  padding: 2rem;
 }
 
 /* Pricing Section */
@@ -147,7 +156,7 @@ p {
 
 .price-text {
   font-size: 3rem;
-  line-height: 1.5;
+  color: #ce1212; 
 }
 
 .pricing-column {
@@ -161,11 +170,18 @@ p {
   margin: 20px 10px;
 }
 
-@media (max-width: 1028px) {
+.socialLink {
+  color: black;
+}
 
+.socialLink:hover {
+  color:#ce1212;
+}
+
+
+
+@media (max-width: 1028px) {
   #title {
     text-align: center;
   }
-
-
 }
